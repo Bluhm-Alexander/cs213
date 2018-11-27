@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE bsa SYSTEM "BSA.dtd">
+
+<bsa>
+	<council name="Grand Canyon Council">
+		<troop number="785" unit="Bigfoot Patrol">
+			<scout>
+				<first-name>Johnny</first-name>
+				<last-name>Rico</last-name>
+				<address>
+					<street>12356 South Hampton</street>
+					<city>Pheonix</city>
+					<state>Arizona</state>
+				</address>
+				<phone>5145559090</phone>
+				<rank date-earned="03/09/2014">Tenderfoot</rank>
+				<meritbadge date-earned="04/15/2014">First Aid</meritbadge>
+			</scout>
+		</troop>
+	</council>
+</bsa>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        
+        <title>Genesis HDMI Mods</title>
+        <link rel ="stylesheet" type="text/css" href="style.css">
+        <script type="text/javascript" src="executer.js"></script>
+        <meta charset="windows-1252">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+    
+        <div class="heading">
+            <div class="banner">
+                <img src="Header Image.png" align="left"
+                    style="width:1200px; height:160px; margin-right:0px;
+                    float: right; margin-top: -5px;">
+                <img src="logo.png" style="float: right; margin-top: -130px;
+                     margin-right: 0px;">
+            </div>
+        </div>
+    
+    <hr class="border">
+    
+        <div class="navigation">
+            <img src="navigation bar.png" align="left">
+            <a href="../index.html" id="navigationText">Index</a>
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <a id="navigationText" href="store.html">Store</a>
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <p id="navigationTextCart">Shopping Cart</p>
+        </div>
+    
+        
+        <div class="RegularPresentation">
+            <p style="font-size: 80px;">Sega Genesis HD Modifications</p>
+            <p>
+                <img src="GenesisRGBBypass02.jpg" alt="" align="right" style="max-height: 500px;">
+                Not a lot of people know that the Sega Genesis can output RGB
+                natively. Here at Sinto we help your genesis to realize it's 
+                fullest potential. By tapping the RGB Scart signal on the Genesis
+                and passing it on to component outputs. With this modification
+                your genesis will output a clean 320x224 progressive resolution.
+                <br><br>
+                You can Either send in your very own Sega Genesis or buy an already
+                modified system. We offer complete replacement warranties for all our hardware.
+                For more information on all the products we offer check out our
+                store page.
+            </p>
+        </div>
+        
+        <div class="w3-content w3-section" style="max-width:700px; margin-top:200px; margin-right: auto; margin-left: auto;">
+
+            <img class="mySlides w3-animate-fading" src="s1.jpg" style="width:100%">
+            <img class="mySlides w3-animate-fading" src="s2.jpg" style="width:100%">
+            <img class="mySlides w3-animate-fading" src="s3.jpg" style="width:100%">
+            <img class="mySlides w3-animate-fading" src="s4.jpg" style="width:100%">
+        </div>
+        
+        <script>
+            var myIndex = 0;
+            carousel();
+
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+            }
+            myIndex++;
+            if (myIndex > x.length) {myIndex = 1;}    
+            x[myIndex-1].style.display = "block";  
+            setTimeout(carousel, 9000);
+            
+            }
+        </script>
+        
+    </body>
+        
+    
+</html>

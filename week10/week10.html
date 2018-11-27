@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <link rel ="stylesheet" type="text/css" href="generalStyle.css">
+        <title>Week 10 AJAX Assignment</title>
+        <meta name="Alex Bluhm" content="Ponder 10: AJAX">
+        <meta charset="windows-1252">
+		<script type="text/javascript" src="parse.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="heading">
+            <h1 id="bigTitle">
+                <a href="week10.html">
+                    <img style="width: 360px; height: 50px; float: left; 
+                         margin: 0px 0px -20px 0px; padding-left: 50px;
+                         padding-top: 10px"
+                         src="logo.png">
+                </a>
+                Ponder and Prove 10</h1>
+            <p class="alignleft"><a style="color: white" href="../index.html">Index</a>
+
+            </p>
+            <p>File Parsing and AJAX Requests</p>
+            
+        </div>
+		
+		<!--This is where we are going to put our city selection section-->
+		<div id="subHeading">
+            <h2>Choose a City</h2>
+            <p>You have a selection of four countries that are populated from files 
+			on server</p>
+			
+			<!--Will signal what text file to open-->
+			<select name="country" onchange='GetCountries(this.value);'
+      style="width: 500px; font-size: 25px; text-align: center;"> 
+				<option>Pick a Country</option>  
+				<option value="usa">USA</option>
+				<option value="canada">Canada</option>
+				<option value="mexico">Mexico</option>
+				<option value="russia">Russia</option>
+			</select>
+			
+			<table id="tablePrint">
+			</table>
+      
+      <!--This is the input field for the json file fetcher-->
+      <hr>
+      <h2 style="font-size: 28px; margin-top: 30px; margin-bottom: 30px; text-align:center;">
+      JSON File Input Field
+      </h2>
+      <div class="input-group">
+        <input type="text" id="user_input" value="json.txt" class="form-control"
+        style="display: block; margin: 0 auto; font-size: 22px;">
+        <span class="input-group-btn">
+          <button class="btn btn-default" onclick="openJson()" type="button"
+          style="margin: 0 auto; display: block;">
+            Display Data
+          </button>
+        </span>
+      </div>
+      
+      <table id="display">
+      </table>
+      
+   </div>
+		
+	</body>
+</html>

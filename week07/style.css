@@ -1,0 +1,94 @@
+/* 
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+
+.heading{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    text-align:right;
+    width:100%;
+    height: 150px;
+/*padding-right: 300px;*/
+    background-color: #5D9FFF;
+    color: white;
+    font-size: 15px;
+    font-family: "Arial Black", Gadget, sans-serif;
+    margin-bottom: 0px;
+}
+
+.banner{
+    max-width: 1180px;
+    min-width: 100px;
+    margin: auto;
+}
+
+.border{
+    position: fixed;
+    top: 60px;
+    z-index: 9999;
+    border: none;
+    height: 4px;
+    width: 155%;
+    margin-left: -50%;
+    margin-top: 90px;
+    /* Set the hr color */
+    color: #333; /* old IE */
+    background-color: #333; /* Modern Browsers */
+}
+
+.navigation{
+    position: fixed;
+    font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", "sans serif";
+    z-index: 9999;
+    /*right:50%;
+    margin-right: -595px;*/
+    top: 154px;
+    right: 0px;
+    left: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1190px;
+    min-width: 500px;
+}
+
+#navigationText{
+    position: relative;
+    width: 1180px;;
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
+    top: 2px;
+    left: -380px;
+}
+
+#navigationTextCart{
+    position: relative;
+    width: 1180px;;
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
+    top: -33px;
+    left: 300px;
+}
+
+.RegularPresentation{
+    font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", "sans serif";
+    font-size: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1180px;
+    margin-top: 190px;
+}
+
+.Slideshow{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1180px;
+    margin-top: 200px;
+}
+

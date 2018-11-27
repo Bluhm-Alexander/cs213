@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE bsa SYSTEM "BSA.dtd">
+<?xml-stylesheet type="text/xsl" href="BSA.xsl" ?>
+
+<bsa>
+	<council name="Grand Canyon Council">
+		<troop number="785" unit="Bigfoot Patrol">
+			<scout>
+				<first-name>Johnny</first-name>
+				<last-name>Rico</last-name>
+				<address>
+					<street>12356, South Hampton</street>
+					<city>Pheonix</city>
+					<state>Arizona</state>
+				</address>
+				<phone>514-555-9090</phone>
+				<rank date-earned="03/09/2014">Tenderfoot</rank>
+				<meritbadge date-earned="04/15/2014">First Aid</meritbadge>
+			</scout>
+		</troop>
+	</council>
+	<council name="Jayhawk Area Council">
+		<troop number="350" unit="Generic Patrol">
+			<scout>
+				<first-name>John</first-name>
+				<last-name>Doe</last-name>
+				<address>
+					<street>567, Lake View</street>
+					<city>Overland Park</city>
+					<state>Kansas</state>
+				</address>
+				<phone>913-555-5959</phone>
+				<rank date-earned="06/29/2014">Second Class</rank>
+				<meritbadge date-earned="07/20/2014">Survival</meritbadge>
+			</scout>
+			<scout>
+				<first-name>Gantry</first-name>
+				<last-name>Stevens</last-name>
+				<address>
+					<street>9875, Gallery</street>
+					<city>Olathe</city>
+					<state>Kansas</state>
+				</address>
+				<phone>913-555-6874</phone>
+				<rank date-earned="06/29/2015">Eagle Scout</rank>
+				<meritbadge date-earned="07/20/2015">Computers</meritbadge>
+				<meritbadge date-earned="09/30/2015">Cooking</meritbadge>
+			</scout>
+		</troop>
+	</council>
+	<council name="Tomahawk Area Council">
+		<troop number="920" unit="Dragon Patrol">
+			<scout>
+				<first-name>Anthony</first-name>
+				<last-name>Reed</last-name>
+				<address>
+					<street>900, Hillcrest cir</street>
+					<city>Portland</city>
+					<state>Oregan</state>
+				</address>
+				<phone>622-555-6112</phone>
+				<rank date-earned="06/29/2014">First Class</rank>
+				<meritbadge date-earned="07/20/2014">Survival</meritbadge>
+			</scout>
+		</troop>
+	</council>
+</bsa>

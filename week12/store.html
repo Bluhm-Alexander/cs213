@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <style>
+            table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            }
+            th, td {
+               padding: 5px;
+            text-align: left;
+            }
+            
+            #orderedProductsTbl{
+                width: 80%;
+                margin: auto;    
+            }
+            
+            form, pre {
+		  margin-left:20px; 
+		  font-family:Verdana, Geneva, sans-serif; 
+                 padding:6px;
+                width: 550px;
+                font-size: 12; 
+                border: 1px solid rgb(0, 90, 136); 
+                border-radius: 4px;
+            }
+            h2 {
+		  border-bottom-style: solid;
+            }
+			
+			input {
+			font-size: 16px;
+			width: 250px;
+			}
+            
+		</style>
+        <title>Store Page</title>
+        <link rel ="stylesheet" type="text/css" href="style.css">
+        <script type="text/javascript" src="executer.js"></script>
+        <meta charset="windows-1252">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    
+    <body>
+    
+        <div class="heading">
+            <div class="banner">
+                <img src="Header Image.png" align="left"
+                    style="width:1200px; height:160px; margin-right:0px;
+                    float: right; margin-top: -5px;">
+                <a href="week12.html"><img src="logo.png" style="float: right; margin-top: -130px;
+                        margin-right: 0px;"></a>
+            </div>
+        </div>
+    
+    
+        <hr class="border">
+    
+        <div class="navigation">
+            <img src="navigation bar.png" align="left">
+            <a href="../index.html" id="navigationText">Index</a>
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <a id="navigationText" href="store.html">Store</a>
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <p id="navigationTextCart">Shopping Cart</p>
+        </div>
+    
+        <br>
+        <br>
+        <br>
+        <br>
+        
+        
+        <div class="RegularPresentation">
+            
+            <h1>Our Products</h1>
+            
+            <table style="width: 100%;">
+                <tr>
+                    <td>Sega Genesis Model 1 Component Mod</td>
+                    <td><button type="button" onclick="AddtoCart('Genesis','Model 1 Component pre-modded',150)">Add to Cart</button></td>
+                </tr>
+                
+                <tr>
+                    <th>Price:</th>
+                    <td>$150.00</td>
+                </tr>
+            </table>
+            
+            <br>
+            
+            <table style="width: 100%;">
+                <tr>
+                    <td>Sega Genesis Model 2 Component Mod</td>
+                    <td><button type="button" onclick="AddtoCart('Genesis','Model 2 Component pre-modded',88.00)">Add to Cart</button></td>
+                </tr>
+                
+                <tr>
+                    <th>Price:</th>
+                    <td>$88.00</td>
+                </tr>
+            </table>
+            
+            /*clear cart*/
+            <button type="button" onclick="ResetCart()">Clear Cart</button>
+            
+        </div>
+        
+        <div class="RegularPresentation" style="margin-top: 0px">
+            <h1>Shopping Cart</h1>
+            
+            
+            <table cellpadding="4" cellspacing="12" border="1" id="orderedProductsTbl">
+                <thead>
+                    <tr>
+                        <td>
+                            Name
+                        </td>
+                        <td>
+                            Description
+                        </td>
+                        <td>
+                            Price
+                        </td>
+                    </tr>
+                </thead>
+                <tbody id="orderedProductsTblBody">
+
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>Shipping ($12.35) + Sales Tax (9.19%) = Total:</td>
+                        <td colspan="3" align="right" id="cart_total" name="cart">
+                            $0.00
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+            
+            
+            
+        </div>
+    
+        <div class="RegularPresentation" style="margin-top: 100px">
+            <h1>Order Form</h1>
+			
+            <p>Please enter legal Name no numbers.</p>
+            <form action="submission.php" id="form1" oninput="problem1()" method="post">
+                <table>
+                    <tr>
+                        <td>First Name</td>
+                        <td><input type="text" size="22" name="first" /></td>
+                         <td id="error1"><span style='color:red'>Invalid Name</span></td>
+                    </tr>
+                    <tr>
+                        <td>Last Name</td>
+                        <td><input type="text" size="22" name="last" /></td>
+                         <td id="error2"><span style='color:red'>Invalid Name</span></td>
+                    </tr>
+                </table>
+            <!--</form>-->
+            
+			<h2>Address</h2>
+			<!--<form action="" id="address" oninput="problem4()">-->
+				<table>
+					<tr><th colspan="2"><span style='color:red'>Invalid Address. Please fill out all fields.</span></th></tr>
+                    <tr>
+						<td>Street Adress</td>
+                        <td>
+                            <input type="text" name="street" />
+                        </td>
+                    </tr>
+					<tr>
+						<td>Suite (optional)</td>
+						<td><input type="text" name="suite" /></td>
+					</tr>
+					<tr>
+						<td>Zip Code</td>
+						<td><input type="text" name="zip" style="width: 60px;" /></td>
+					</tr>
+					<tr>
+						<td>State</td>
+						<td><input type="text" name="state" style="width: 100px;" /></td>
+                </table>
+			<!--</form>-->
+			
+			<h2>Phone Number</h2>
+			<p>Please include area code</p>
+			<!--<form action="" id="phone" oninput="test()">-->
+				<table>
+					<tr>
+                        <td><input type="text" name="phone" maxlength="10"/></td>
+                        <td><span style='color:red'>Invalid Phone Number</span></td>
+					</tr>
+				</table>
+			<!--</form>-->
+			
+            <h2>Credit Card Number</h2>
+            <p>Please enter a credit card number: 0000 0000 0000 0000</p>
+            <!--<form action="" id="form1" oninput="problem3()">-->
+                <table>
+					<tr>
+						<th colspan="2"><span style='color:red'>Invalid credit card. Please fill out all fields.</span></th>
+					</tr>
+                    <tr>
+						<td>Card Number</td>
+                        <td><input type="text" name="cardNumber" maxlength="16"/></td>
+                    </tr>
+					<tr>
+						<td>Card Type</td>
+						<td>
+							<select id="card" name="cardType" style="font-size: 15px;">
+								<option value="select">Select Card</option>
+								<option value="Master Card">Master Card</option>
+								<option value="Visa">Visa</option>
+								<option value="Discover">Discover</option>
+								<option value="American Express">American Express</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td>Expiration</td>
+						<td>
+							<select id='Month' name="month" onchange="problem3()">
+								<option value='select'>--Select Month--</option>
+								<option value='January'>Janaury</option>
+								<option value='February'>February</option>
+								<option value='March'>March</option>
+								<option value='April'>April</option>
+								<option value='May'>May</option>
+								<option value='June'>June</option>
+								<option value='July'>July</option>
+								<option value='August'>August</option>
+								<option value='September'>September</option>
+								<option value='October'>October</option>
+								<option value='November'>November</option>
+								<option value='December'>December</option>
+							</select>
+							<select id="Year" name="year" onchange="problem3()">
+								<option value='select'>--Select Year--</option>
+								<option value='2017'>2017</option>
+								<option value='2018'>2018</option>
+								<option value='2019'>2019</option>
+								<option value='2020'>2020</option>
+								<option value='2021'>2021</option>
+								<option value='2022'>2022</option>
+								<option value='2023'>2023</option>
+							</select>
+						</td>
+					</tr>
+                </table>
+            <!--</form>-->
+            <br>
+            <br>
+          <div>
+            <!--<form action="submission.php" id=form1 method="post" >-->
+            <input type="submit" value="Confirm" name="send" onclick="post()"/>
+            <input type="submit" value="Cancel" name="send"/>
+            </form>
+			    </div>
+        </div>
+    </body>
+</html>

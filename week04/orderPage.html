@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <link rel ="stylesheet" type="text/css" href="generalStyle.css">
+        <title>Order Page</title>
+        <meta author="Alex Bluhm" content="Order Page">
+        <meta charset="windows-1252">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="heading">
+            <h1 id="bigTitle">
+                <a href="week04.html">
+                    <img style="width: 400px; float: left; 
+                         margin: 0px 15px 15px 0px; padding-left: 50px;
+                         padding-top: 10px"
+                         src="logo.png">
+                </a>
+                Order Form</h1>
+            <p class="alignright">Quality and Direct Reprints</p>
+            
+        </div>
+        
+        <div id="subHeading">
+
+            <h2 style="color: black">All products are $50.00</h2>
+        </div>
+        
+        <form action="" id="Input">
+            Street Address:<br>
+            <input type="text" name="Street" value="" 
+                          style="width:400px"><br>
+            Secondary (optional):<br>
+            <input type="text" name="Secondary" value="" 
+                          style="width:200px"><br>
+            City:<br>
+            <input type="text" name="City" value="" 
+                          style="width:200px"><br>
+            Zip Code:<br>
+            <input type="text" name="zip" value="" 
+                          style="width:100px"><br>
+            <br>
+            Payment Method<br>
+            <div class="radio">
+                <label><input type="radio" name="optradio">Credit</label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="optradio">Debit</label>
+            </div>
+            <div class="radio disabled">
+                <label><input type="radio" name="optradio" disabled>PayPal</label>
+            </div>
+            <br>
+            Card Number:<br>
+            <input type="text" name="Card" value="" 
+                          style="width:400px"><br>
+            <input type="submit" value="Submit">
+        </form>
+        
+        <div id="orderingInstructions">
+            <a href="week04.html"> Back to Ordering Page<a>
+        </div>
+    </body>
+</html>
